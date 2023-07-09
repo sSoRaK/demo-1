@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quản lý sinh viên</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/student-management.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="top-bar row">
+        <div class="top-bar_logo col-2 text-center">
+          <img src="./assets/ellipse-6.svg" alt="ellipse-6" class="logo-img" />
+        </div>
+        <p class="top-bar_text col-7 m-auto text-center">
+          Học là quá trình không ngừng nghỉ. Được học và làm mà phát triển đó
+          mới là lẽ sống.
+        </p>
+        <div class="top-bar_btn col-3">
+          <div class="wrapper">
+            <img
+              src="./assets/iconoir-bell-notification.svg"
+              alt="iconoir-bell-notification"
+              class="bell-notification"
+            />
+          </div>
+          <div class="wrapper">
+            <button class="btn btn-primary log-out_btn">Đăng Xuất</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <div class="main row">
+        <div class="side-nav col-2 top-bar_logo" style="height: 55rem">
+          <div class="title-img text-center">Rikkei Academy</div>
+          <div class="line-straight w-100"></div>
+          <nav class="nav-bar">
+            <ul>
+              <li class="group-items_menu">
+                <img
+                  src="./assets/vuesax-broken-home-2.svg"
+                  alt="vuesax-broken-home-2"
+                />
+                <a href="dashboard.html">Bảng điều khiển</a>
+              </li>
+              <li class="group-items_menu">
+                <i class="bi bi-bar-chart-line-fill icon-size"></i>
+                <a href="#">Quản lý khóa học</a>
+              </li>
+              <li class="group-items_menu">
+                <img
+                  src="./assets/vuesax-broken-home-2.svg"
+                  alt="vuesax-broken-home-2"
+                />
+                <a href="#">Quản lý lớp học</a>
+              </li>
+              <li class="group-items_menu">
+                <i class="bi bi-mortarboard icon-size"></i>
+                <a href="./student-management.html">Quản lý sinh viên</a>
+              </li>
+              <li class="group-items_menu">
+                <i class="bi bi-database-gear icon-size"></i>
+                <a href="#">Quản lý tài khoản</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-content col-10">
+          <div class="breadcrumb mt-4 mb-4 mx-5">
+            <p class="my-auto">
+              <a href="dashboard.html">Rikkei_Academy</a> /
+              <span>Sinh viên</span>
+            </p>
+            <!-- Button trigger modal -->
+            <button
+              type="button"
+              class="btn btn-primary"
+              data-bs-toggle="modal"
+              data-bs-target="#staticBackdrop"
+            >
+              Thêm sinh viên
+            </button>
+            <!-- Modal -->
+            <div
+              class="modal fade"
+              id="staticBackdrop"
+              data-bs-backdrop="static"
+              data-bs-keyboard="false"
+              tabindex="-1"
+              aria-labelledby="staticBackdropLabel"
+              aria-hidden="true"
+            >
+              <div class="modal-dialog modal-dialog-centered modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header border-0">
+                    <h1 class="modal-title" id="staticBackdropLabel">
+                      Tạo mới sinh viên
+                    </h1>
+                    <button
+                      type="button"
+                      class="btn-close"
+                      data-bs-dismiss="modal"
+                      aria-label="Close"
+                    ></button>
+                  </div>
+                  <!-- Modal body -->
+                  <div class="modal-body">
+                    <div class="row row-cols-2">
+                      <div class="mb-3">
+                        <label for="student-id" class="form-label">Mã sinh viên</label>
+                        <input type="text" class="form-control" id="student-id" placeholder="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="student-dob" class="form-label">Ngày sinh</label>
+                        <input type="date" class="form-control" id="student-dob" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row row-cols-2">
+                      <div class="mb-3">
+                        <label for="student-name" class="form-label">Tên sinh viên</label>
+                        <input type="text" class="form-control" id="student-name" placeholder="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="student-class" class="form-label">Lớp học</label>
+                        <input type="text" class="form-control" id="student-class" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row row-cols-2">
+                      <div class="mb-3">
+                        <label for="student-address" class="form-label">Địa chỉ</label>
+                        <input type="text" class="form-control" id="student-address" placeholder="">
+                      </div>
+                      <div class="mb-3">
+                        <label for="student-email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="student-email" placeholder="">
+                      </div>
+                    </div>
+                    <div class="row row-cols-2">
+                      <div class="mb-3">
+                        <label for="info" class="form-label">Mô tả (không bắt buộc)</label>
+                        <textarea class="form-control" id="info" rows="5" placeholder="Write a message..." style="resize: none;"></textarea>
+                      </div>
+                      <div class="mb-3">
+                        <label for="student-number" class="form-label">Số điện thoại</label>
+                        <input type="number" class="form-control" id="student-number" placeholder="">
+                        <div class="radio-checkbox mt-4">
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="male" value="male" checked>
+                            <label class="form-check-label" for="male">Nam</label>
+                          </div>
+                          <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="female" value="female">
+                            <label class="form-check-label" for="female">Nữ</label>
+                          </div>
+                        </div>
+                      </div>
+                      
+                    </div>
+                  </div>
+                  <!-- Modal footer -->
+                  <div class="modal-footer border-0">
+                    <button
+                      type="button"
+                      class="btn btn-secondary"
+                      data-bs-dismiss="modal"
+                    >
+                      Hủy
+                    </button>
+                    <button type="button" class="btn btn-primary btnAddStudent" data-bs-dismiss="modal">
+                      Thêm mới
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="search-bar mx-5 mb-5">
+            <div class="my-auto">
+              <i class="bi bi-search mx-3"></i>
+              <input
+                type="text"
+                name="search"
+                id="search"
+                class="search-student"
+                placeholder="Nhập vào đây để tìm kiếm"
+              />
+            </div>
+          </div>
+          <!-- <div class="table-content"> -->
+            <table class="student-table mx-5 table table-striped table-hover table-reponsive">
+              <thead class="table-light-dark">
+                <tr>
+                  <th>#</th>
+                  <th>Mã SV</th>
+                  <th>Tên SV</th>
+                  <th>Số ĐT</th>
+                  <th>Email</th>
+                  <th>Ngày sinh</th>
+                  <th>Địa chỉ</th>
+                  <th>Lớp học</th>
+                  <th>Trạng thái</th>
+                  <th class="text-center">Hành động</th>
+                </tr>
+              </thead>
+              <tbody class="table-group-dividera" id="content">
+                <!-- row data 1 -->
+                <!-- <tr style="line-height: 40px;">
+                  <td>1</td>
+                  <td>SV001</td>
+                  <td>Nguyễn Văn A</td>
+                  <td>0905229399</td>
+                  <td>nva@gmail.com</td>
+                  <td>2000</td>
+                  <td>Đà Lạt</td>
+                  <td>JV20230508</td>
+                  <td>
+                    <select class="form-select" aria-label="select" style="width: 9rem;">
+                      <option selected>Trạng thái</option>
+                      <option value="1">Chờ lớp</option>
+                      <option value="2">Đang học</option>
+                      <option value="3">Bảo lưu</option>
+                      <option value="4">Đình chỉ</option>
+                      <option value="5">Tốt nghiệp</option>
+                    </select>
+                  </td>
+                  <td class="d-flex justify-content-center action">
+                    <i class="bi bi-pencil-square btn-edit"></i>
+                    <i class="bi bi-trash-fill btn-delete"></i>
+                  </td>
+                </tr> -->
+                <!-- row data 2 -->
+                <!-- <tr style="line-height: 40px;">
+                  <td>2</td>
+                  <td>SV002</td>
+                  <td>Nguyễn Văn B</td>
+                  <td>0905229399</td>
+                  <td>nvb@gmail.com</td>
+                  <td>2003</td>
+                  <td>Nha Trang</td>
+                  <td>JV20230508</td>
+                  <td>
+                    <select class="form-select" aria-label="select" style="width: 9rem;">
+                      <option selected>Trạng thái</option>
+                      <option value="1">Chờ lớp</option>
+                      <option value="2">Đang học</option>
+                      <option value="3">Bảo lưu</option>
+                      <option value="4">Đình chỉ</option>
+                      <option value="5">Tốt nghiệp</option>
+                    </select>
+                  </td>
+                  <td class="d-flex justify-content-center action">
+                    <i class="bi bi-pencil-square btn-edit"></i>
+                    <i class="bi bi-trash-fill btn-delete"></i>
+                  </td>
+                </tr> -->
+              </tbody>
+            </table>
+          <!-- </div> -->
+          <nav aria-label="navigation">
+            <ul class="pagination justify-content-center">
+              <li class="page-item"><a class="page-link previous" href="#" >Previous</a></li>
+              ...
+              <li class="page-item"><a class="page-link next" href="#">Next</a></li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid">
+      &copy; Copyright Rikkei Academy 2023
+    </footer>
+    <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+    crossorigin="anonymous"
+    ></script>
+    <script src="./js/student-management.js"></script>
+  </body>
+</html>

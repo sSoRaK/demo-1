@@ -1,0 +1,76 @@
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.modal-body
+  input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-year-field,
+input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-month-field,
+input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-day-field,
+input[type="date"]:not(:focus):in-range::-webkit-datetime-edit-text {
+  color: transparent;
+}
+
+.breadcrumb {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-bar {
+  display: flex;
+  align-items: center;
+  padding: 17px 20px 17px 17px;
+  background-color: #fcfafa;
+  background-color: skyblue;
+}
+.search-student {
+  width: 14rem;
+  border: none;
+  background-color: inherit;
+}
+.search-student:focus {
+  outline: none;
+}
+.student-table {
+  width: 94%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.modal-header h1 {
+  font-family: "Roboto", sans-serif;
+  color: #4f4f4f;
+  font-size: 32px;
+  font-weight: 600;
+}
+.radio-checkbox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  padding: 25px 20px;
+  border: 2px dashed #00a3ff;
+  border-radius: 8px;
+}
+.table-light-dark {
+  background-color: #393939;
+  color: #fcfafa;
+}
+th {
+  font-weight: 500;
+  font-size: 18px;
+}
+.table-group-divider {
+  border-top: 2.5px solid gray;
+}
+.modal-body{
+  margin: 10px 240px;
+}
+.action{
+  gap: 15px;
+}
+.btn-edit:hover,.btn-delete:hover{
+  color: #0d6efd;
+  cursor: pointer;
+}

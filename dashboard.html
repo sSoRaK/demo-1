@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/dashboard.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100;200;300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <header class="container-fluid">
+      <div class="top-bar row">
+        <div class="top-bar_logo col-2 text-center">
+          <img src="./assets/ellipse-6.svg" alt="ellipse-6" class="logo-img" />
+        </div>
+        <p class="top-bar_text col-7 m-auto text-center">
+          Học là quá trình không ngừng nghỉ. Được học và làm mà phát triển đó
+          mới là lẽ sống.
+        </p>
+        <div class="top-bar_btn col-3">
+          <div class="wrapper">
+            <img
+              src="./assets/iconoir-bell-notification.svg"
+              alt="iconoir-bell-notification"
+              class="bell-notification"
+            />
+          </div>
+          <div class="wrapper">
+            <button class="btn btn-primary btnLogOut">Đăng Xuất</button>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="container-fluid">
+      <div class="main row">
+        <div class="side-nav col-2 top-bar_logo" style="height: 55rem">
+          <div class="title-img text-center">Rikkei Academy</div>
+          <div class="line-straight w-100"></div>
+          <nav class="nav-bar">
+            <ul>
+              <li class="group-items_menu">
+                <img
+                  src="./assets/vuesax-broken-home-2.svg"
+                  alt="vuesax-broken-home-2"
+                />
+                <a href="dashboard.html">Bảng điều khiển</a>
+              </li>
+              <li class="group-items_menu">
+                <i class="bi bi-bar-chart-line-fill icon-size"></i>
+                <a href="#">Quản lý khóa học</a>
+              </li>
+              <li class="group-items_menu">
+                <img
+                  src="./assets/vuesax-broken-home-2.svg"
+                  alt="vuesax-broken-home-2"
+                />
+                <a href="#">Quản lý lớp học</a>
+              </li>
+              <li class="group-items_menu">
+                <i class="bi bi-mortarboard icon-size"></i>
+                <a href="./student-management.html">Quản lý sinh viên</a>
+              </li>
+              <li class="group-items_menu">
+                <i class="bi bi-database-gear icon-size"></i>
+                <a href="#">Quản lý tài khoản</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="main-content col-10">
+          <div class="title">
+            <h2 class="text-center">
+              Chào mừng đến trang quản trị , Rikkei Academy
+            </h2>
+            <p class="text-center">Đà Nẵng - Hà Nội - TP.HCM - FUKUOKA</p>
+          </div>
+          <div class="main-content_data">
+            <div class="items-data">
+              <i class="bi bi-person-fill-add background-icon text-center"></i>
+              <div class="wrapper-items">
+                <h3>Thông tin khóa học</h3>
+                <p>Số lượng khóa học hiện tại:</p>
+              </div>
+            </div>
+            <div class="items-data">
+              <i class="bi bi-bank background-icon text-center"></i>
+              <div class="wrapper-items">
+                <h3>Thông tin lớp học</h3>
+                <p>Số lượng lớp học hiện tại:</p>
+              </div>
+            </div>
+            <div class="items-data">
+              <i class="bi bi-mortarboard-fill background-icon text-center"></i>
+              <div class="wrapper-items">
+                <div class="wrapper-items-contact">
+                  <h3>Thông tin sinh viên</h3>
+                  <div class="contact_us">
+                    <i class="bi bi-headset"></i>
+                    <button class="btn btn-contact_us text-white">
+                      Liên hệ thêm
+                    </button>
+                    <i class="bi bi-chevron-up"></i>
+                  </div>
+                </div>
+                <p>Số lượng sinh viên hiện tại:</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="container-fluid">
+      &copy; Copyright Rikkei Academy 2023
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Warning Login -->
+    <script src="./js/dashboard-log_out.js"></script>
+  </body>
+</html>

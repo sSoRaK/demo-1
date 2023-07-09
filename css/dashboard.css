@@ -1,0 +1,56 @@
+.title h2,
+.title p {
+  color: #4f4f4f;
+  font-weight: 600;
+}
+.title h2 {
+  font-size: 40px;
+}
+.title p {
+  font-size: 24px;
+}
+.background-icon {
+  width: 45px;
+  height: 45px;
+  font-size: 30px;
+  border-radius: 8px;
+  color: #13296a;
+  background-color: #eef3fa;
+}
+.main-content_data{
+  position: absolute;
+  transform: translate(10%,40%);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+.items-data {
+  display: flex;
+  gap: 20px;
+}
+.wrapper-items {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.wrapper-items-contact {
+  width: 80rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.contact_us {
+  width: 180px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #4a4b68;
+  border-radius: 30px;
+  cursor: pointer;
+}
+.contact_us:hover {
+  background-color: #4a4b68dd;
+  color: #fff;
+}
